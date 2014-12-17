@@ -11,10 +11,6 @@ h1, h2, h3, h4, h5, h6 {
 /* BASE LAYOUT */
 
 html {
-	background-color: #ddd;
-	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-	background-image: linear-gradient(top, #aaa, #ddd);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
 	background-repeat: no-repeat;
 	height: 100%;
@@ -228,6 +224,33 @@ fieldset,
 	color: #666666;
 	text-align: right;
 	width: 25%;
+}
+
+#logo {
+  text-align: center;
+  padding-top: 200px;
+}
+
+#searchTextDiv {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#searchText {
+  width: 500px;
+  height: 30px;
+}
+
+#doSearch {
+  margin-left: 15px;
+  height: 38px;
+  font-weight: bold;
+}
+
+#smallLogo {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
 }
 
 .fieldcontain .property-label {
