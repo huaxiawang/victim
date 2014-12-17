@@ -8,5 +8,6 @@ class SkillItems {
   static constraints = {
     skillItemName nullable: true, unique: true
     description nullable: true
+    skillType nullable: true
   }
 }
