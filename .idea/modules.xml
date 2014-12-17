@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/victim.iml" filepath="$PROJECT_DIR$/victim.iml" />
-      <module fileurl="file://$PROJECT_DIR$/victim-grailsPlugins.iml" filepath="$PROJECT_DIR$/victim-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Victim.iml" filepath="$PROJECT_DIR$/Victim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Victim-grailsPlugins.iml" filepath="$PROJECT_DIR$/Victim-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
