@@ -10,13 +10,14 @@ class BootStrap {
 
       def profile1 = new Profile()
       def employee1 = new Employee(firstName: "Huaxia", lastName: "Wang")
+      employee1.save(flush: true, failOnError: true)
       profile1.employee = employee1
       profile1.save(flush: true, failOnError: true)
       employee1.profile = profile1
       employee1.save(flush: true, failOnError: true)
 
-      def skillType1 = new SkillType(skillTypeName: "language", profile: profile1)
-      def skillType2 = new SkillType(skillTypeName: "platform", profile: profile1)
+      def skillType1 = new SkillType(skillTypeName: "language")
+      def skillType2 = new SkillType(skillTypeName: "platform")
       skillType1.save(flush: true, failOnError: true)
       skillType2.save(flush: true, failOnError: true)
 
@@ -40,29 +41,16 @@ class BootStrap {
 
       def profile2 = new Profile()
       def employee2 = new Employee(firstName: "Hardi", lastName: "Chandra")
+      employee2.save(flush: true, failOnError: true)
       profile2.employee = employee2
       profile2.save(flush: true, failOnError: true)
       employee2.profile = profile2
       employee2.save(flush: true, failOnError: true)
 
-      def skillType3 = new SkillType(skillTypeName: "language", profile: profile2)
-      def skillType4 = new SkillType(skillTypeName: "platform", profile: profile2)
-      skillType3.save(flush: true, failOnError: true)
-      skillType4.save(flush: true, failOnError: true)
-
-      def skillItem5 = new SkillItems(skillItemName: "groovy", skillType: skillType3, description: "blablabla")
-      def skillItem6 = new SkillItems(skillItemName: "java", skillType: skillType3, description: "blablabla")
-      def skillItem7 = new SkillItems(skillItemName: "windows", skillType: skillType4, description: "blablabla")
-      def skillItem8 = new SkillItems(skillItemName: "linux", skillType: skillType4, description: "blablabla")
-      skillItem5.save(flush: true, failOnError: true)
-      skillItem6.save(flush: true, failOnError: true)
-      skillItem7.save(flush: true, failOnError: true)
-      skillItem8.save(flush: true, failOnError: true)
-
-      def proficiency5 = new Proficiency(profile: profile2, skillItems: skillItem5, level: 10)
-      def proficiency6 = new Proficiency(profile: profile2, skillItems: skillItem6, level: 10)
-      def proficiency7 = new Proficiency(profile: profile2, skillItems: skillItem7, level: 10)
-      def proficiency8 = new Proficiency(profile: profile2, skillItems: skillItem8, level: 10)
+      def proficiency5 = new Proficiency(profile: profile2, skillItems: skillItem1, level: 10)
+      def proficiency6 = new Proficiency(profile: profile2, skillItems: skillItem2, level: 10)
+      def proficiency7 = new Proficiency(profile: profile2, skillItems: skillItem3, level: 10)
+      def proficiency8 = new Proficiency(profile: profile2, skillItems: skillItem4, level: 10)
       proficiency5.save(flush: true, failOnError: true)
       proficiency6.save(flush: true, failOnError: true)
       proficiency7.save(flush: true, failOnError: true)
