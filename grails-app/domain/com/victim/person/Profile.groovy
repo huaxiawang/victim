@@ -5,6 +5,7 @@ import com.victim.skills.SkillType
 
 class Profile {
   Employee employee
+
   static constraints = {
   }
 

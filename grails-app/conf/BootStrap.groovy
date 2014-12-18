@@ -21,6 +21,10 @@ class BootStrap {
       skillType1.save(flush: true, failOnError: true)
       skillType2.save(flush: true, failOnError: true)
 
+      profile1.addToType(skillType1)
+      profile1.addToType(skillType2)
+      profile1.save(flush: true, failOnError: true)
+
       def skillItem1 = new SkillItems(skillItemName: "c++", skillType: skillType1, description: "blablabla")
       def skillItem2 = new SkillItems(skillItemName: "java", skillType: skillType1, description: "blablabla")
       def skillItem3 = new SkillItems(skillItemName: "windows", skillType: skillType2, description: "blablabla")
@@ -47,14 +51,16 @@ class BootStrap {
       employee2.profile = profile2
       employee2.save(flush: true, failOnError: true)
 
-      def proficiency5 = new Proficiency(profile: profile2, skillItems: skillItem1, level: 10)
-      def proficiency6 = new Proficiency(profile: profile2, skillItems: skillItem2, level: 10)
-      def proficiency7 = new Proficiency(profile: profile2, skillItems: skillItem3, level: 10)
-      def proficiency8 = new Proficiency(profile: profile2, skillItems: skillItem4, level: 10)
+      profile2.addToType(skillType1)
+      profile2.addToType(skillType2)
+      profile2.save(flush: true, failOnError: true)
+
+      def proficiency5 = new Proficiency(profile: profile2, skillItems: skillItem1, level: 7)
+      def proficiency6 = new Proficiency(profile: profile2, skillItems: skillItem2, level: 8)
+      def proficiency7 = new Proficiency(profile: profile2, skillItems: skillItem3, level: 9)
       proficiency5.save(flush: true, failOnError: true)
       proficiency6.save(flush: true, failOnError: true)
       proficiency7.save(flush: true, failOnError: true)
-      proficiency8.save(flush: true, failOnError: true)
 
     }
     def destroy = {

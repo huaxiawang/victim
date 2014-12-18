@@ -64,10 +64,10 @@ body {
 a:link, a:visited, a:hover {
 	color: #000000;
 }
-
+/*
 a:hover, a:active {
-	outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
-}
+	outline: none;
+}*/
 
 h1 {
 	color: #000000;
@@ -167,7 +167,7 @@ img {
 .nav a:active, .nav a:visited {
 	color: #666666;
 }
-
+/*
 .nav a:focus, .nav a:hover {
 	background-color: #999999;
 	color: #ffffff;
@@ -179,7 +179,7 @@ img {
 	background-color: transparent;
 	color: #444444;
 	text-decoration: underline;
-}
+}*/
 
 .nav a.home, .nav a.list, .nav a.create {
 	background-position: 0.7em center;
@@ -248,10 +248,31 @@ fieldset,
   font-weight: bold;
 }
 
+#searchResultRow {
+  margin-top: 20px;
+}
+
 #smallLogo {
   width: 200px;
   height: 40px;
   margin-top: 20px;
+}
+
+#employeeDetailHeader {
+  padding-top: 40px;
+  text-align: left;
+  margin-left: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#detailedInformation {
+  margin-top: 20px;
+}
+
+#skillTypeDecorator {
+  font-size: 30;
+  font-weight: bold;
 }
 
 .fieldcontain .property-label {
@@ -473,9 +494,9 @@ th a:link, th a:visited {
 	color: #666666;
 }
 
-th a:hover, th a:focus {
+/*th a:hover, th a:focus {
 	color: #333333;
-}
+}*/
 
 th.sortable a {
 	background-position: right;
@@ -499,9 +520,9 @@ th.desc a {
 	background: #ffffff;
 }
 
-th:hover, tr:hover {
+/*th:hover, tr:hover {
 	background: #E1F2B6;
-}
+}*/
 
 /* PAGINATION */
 
@@ -527,7 +548,7 @@ th:hover, tr:hover {
 	-webkit-border-radius: 0.3em;
 	        border-radius: 0.3em;
 }
-
+/*
 .pagination a:hover, .pagination a:focus,
 .pagination .currentStep {
 	background-color: #999999;
@@ -541,7 +562,7 @@ th:hover, tr:hover {
 	background-color: transparent;
 	color: #444444;
 	text-decoration: underline;
-}
+}*/
 
 /* ACTION BUTTONS */
 
@@ -572,7 +593,7 @@ th:hover, tr:hover {
 	-webkit-border-radius: 0.3em;
 	        border-radius: 0.3em;
 }
-
+/*
 .buttons input:hover, .buttons input:focus,
 .buttons a:hover, .buttons a:focus {
 	background-color: #999999;
@@ -589,7 +610,7 @@ th:hover, tr:hover {
 	background-color: transparent;
 	color: #444444;
 	text-decoration: underline;
-}
+}*/
 
 .buttons .delete, .buttons .edit, .buttons .save {
 	background-position: 0.7em center;

@@ -15,20 +15,34 @@
   <g:form url='[controller: "search", action: "index"]'>
     <div>
       <asset:image id="smallLogo" src="victim/logo.png"/>
+      </div>
+    <div>
       <input type="text" name="searchText" id="searchText" value="${params.searchText}"/>
       <input type="submit" name="doSearch" id="doSearch" value="search" />
     </div>
   </g:form>
 
-  <g:each in="${matchedEmployees}" var="matchedEmployee">
+
     <div id="searchResultRow">
-      <table>
-        <tr rowspan="2">
-          <td><asset:image src="favicon.ico" width="120" height="40"/></td>
-          <td>${matchedEmployee.firstName} ${matchedEmployee.lastName}</td>
-        </tr>
+      <table width="1000" border="0">
+        <g:each in="${matchedEmployees}" var="matchedEmployee">
+          <tr top->
+            <td rowspan="2" width="150">
+              <g:link controller="employee" action="showDetail" id="${matchedEmployee.id}" params="[id: matchedEmployee.id]">
+                <asset:image src="favicon.ico" width="120" height="80"/>
+              </g:link>
+            </td>
+            <td height="1">
+              <g:link controller="employee" action="showDetail" id="${matchedEmployee.id}" params="[id: matchedEmployee.id]">
+                Name : ${matchedEmployee.firstName}&nbsp;${matchedEmployee.lastName}
+              </g:link>
+            </td>
+          </tr>
+          <tr>
+            <td>Skill Items : ${matchedEmployee.profile.proficiency.skillItems.skillItemName}</td>
+          </tr>
+        </g:each>
       </table>
     </div>
-  </g:each>
 </body>
 </html>

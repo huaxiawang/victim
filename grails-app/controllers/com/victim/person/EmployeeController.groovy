@@ -1,6 +1,8 @@
 package com.victim.person
 
-
+import com.victim.Proficiency
+import com.victim.skills.SkillItems
+import com.victim.skills.SkillType
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
@@ -17,6 +19,12 @@ class EmployeeController {
 
     def show(Employee employeeInstance) {
         respond employeeInstance
+    }
+
+    def showDetail() {
+      def id = params.id
+      Employee employee = Employee.findById(id)
+      [employee: employee]
     }
 
     def create() {
