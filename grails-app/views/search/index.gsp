@@ -29,7 +29,7 @@
           <tr>
             <td rowspan="2" width="150">
               <g:link controller="employee" action="showDetail" id="${matchedEmployee.id}" params="[id: matchedEmployee.id]">
-                <asset:image src="favicon.ico" width="120" height="100"/>
+                <asset:image src="victim/${matchedEmployee.firstName+matchedEmployee.lastName+'.jpg'}" width="120" height="100"/>
               </g:link>
             </td>
             <td height="1">

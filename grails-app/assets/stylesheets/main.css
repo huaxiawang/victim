@@ -181,7 +181,7 @@ img {
 	text-decoration: underline;
 }*/
 
-.nav a.home, .nav a.list, .nav a.create {
+.nav a.home, .nav a.list, .nav a.create, .nav a.logout {
 	background-position: 0.7em center;
 	background-repeat: no-repeat;
 	text-indent: 25px;
@@ -197,6 +197,10 @@ img {
 
 .nav a.create {
 	background-image: url(../images/skin/database_add.png);
+}
+
+.nav a.logout {
+  background-image: url(../images/skin/exclamation.png);
 }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
@@ -273,6 +277,18 @@ fieldset,
 #skillTypeDecorator {
   font-size: 30;
   font-weight: bold;
+}
+
+#errorText {
+  color: red;
+}
+
+#signInStyle {
+  text-align: right;
+}
+
+#loginPage {
+  margin-top: 20px;
 }
 
 .fieldcontain .property-label {

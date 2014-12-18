@@ -2,8 +2,10 @@
 <html>
 	<head>
     <asset:stylesheet src="main.css"/>
+    <title>Victim</title>
 	</head>
 	<body>
+    <div id="signInStyle"><g:link controller="login" action="index">Sign In</g:link></div>
     <div id="logo"><asset:image src="victim/logo.png" alt="Victim Logo"/></div>
     <g:form url='[controller: "search", action: "index"]'>
       <div id="searchTextDiv">
