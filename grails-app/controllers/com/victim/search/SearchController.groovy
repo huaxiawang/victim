@@ -16,7 +16,7 @@ class SearchController {
     def matchedProficiency = Proficiency.search().list{
       should {
         searchText.tokenize().each { keyword ->
-          def wild = keyword.toLowerCase() + '*'
+          def wild = '*' + keyword.toLowerCase() + '*'
 
           wildcard "profile.employee.firstName", wild
           wildcard "profile.employee.lastName", wild
