@@ -17,7 +17,7 @@
     <g:set var="employee" value="${employee}"/>
     <table>
       <tr>
-        <td rowspan="2" width="150"> <asset:image src="favicon.ico" width="120" height="80"/> </td>
+        <td rowspan="2" width="150"> <asset:image src="victim/${employee.firstName+employee.lastName+'.jpg'}" width="120" height="120"/> </td>
         <td> Name : ${employee.firstName}&nbsp;${employee.lastName} </td>
       </tr>
       <tr>
