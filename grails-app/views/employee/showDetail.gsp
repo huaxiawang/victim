@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-  <asset:stylesheet src="main.css"/>
+  <meta name="layout" content="main">
 </head>
 
 <body>
