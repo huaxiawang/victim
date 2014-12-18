@@ -2,6 +2,7 @@
 <html>
 	<head>
     <asset:stylesheet src="main.css"/>
+    <title>Victim</title>
 	</head>
 	<body>
     <div id="signInStyle"><g:link controller="login" action="index">Sign In</g:link></div>
